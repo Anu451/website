@@ -169,3 +169,22 @@ a {
     justify-content: center;
     align-items: center;
 }
+/* Buttons */
+.btn{
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 2rem 3rem ;
+    border: 0;
+    border-radius: 40px;
+}
+
+.btn--primary{
+    background:var(--color-primary);
+    color: white;
+}
+
+.btn--secondary{
+    background: var(--color-secondary);
+    color: white;
+}
