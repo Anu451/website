@@ -268,3 +268,23 @@ a {
         font-size: 1.2rem;
     }
 }
+
+.card--secondary .card--header {
+    background: var(--color-secondary);
+    color: #fff;
+    font-weight:300;
+}
+
+.card--header, .card--body {
+    width: 30rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .card{
+        font-size: 1.5rem;
+    }
+}
