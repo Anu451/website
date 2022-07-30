@@ -256,6 +256,7 @@ a {
 .input-group .input{
     border: 0;
     flex-grow: 1;
+    padding: 1.5rem 1rem;
 }
 
 .input-group .btn{
