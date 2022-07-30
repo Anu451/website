@@ -5,7 +5,8 @@
     --color-heading: #1b0760;
     --color-body: #928ca4;
     --color-border:#ccc;
-    --border-radius:30px
+    --border-radius:30px;
+    --media-font:1.5rem;
 }
 *,
 *::after,
@@ -90,7 +91,7 @@ a {
 
 @media screen and (min-width: 1024px) {
     .link-arrow{
-        font-size: 1.5rem;
+        font-size:var(--media-font);
     }
 }
 
@@ -119,7 +120,7 @@ a {
 }
 @media screen and (min-width: 1024px){
     .badge{
-        font-size: 1.5rem;
+        font-size:var(--media-font);
     }
     .badge--small{
         font-size: 1rem;
@@ -229,7 +230,7 @@ a {
 }
 @media screen and(min-width:1024px) {
     .btm{
-        font-size: 1.5rem;
+        font-size: var(--media-font);
     }
 }
 /* Inputs */
@@ -265,26 +266,32 @@ a {
 
 @media screen and (min-width:1024px) {
     .input{
-        font-size: 1.2rem;
+        font-size:var(--media-font);
     }
 }
 
-.card--secondary .card--header {
-    background: var(--color-secondary);
-    color: #fff;
-    font-weight:300;
-}
-
-.card--header, .card--body {
+.card {
+    border-radius: 5px;
+    box-shadow: 0 0 20px 10px #ccc;
     width: 30rem;
-    font-weight: 300;
-    text-align: center;
+    margin-top : 2rem;
+    overflow:hidden;
+
+}
+.card--header, .card--body{
     padding: 2rem 3rem;
-    border-radius: 10px;
 }
 
-@media screen and (min-width:1024px) {
-    .card{
-        font-size: 1.5rem;
-    }
+.card--primary .card--header{
+    background: var(--color-primary);
+    color: white;
+}
+
+.card--secondary .card--header{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.card--secondary .badge--secondary{
+    background-color: #00d9ff;
 }
