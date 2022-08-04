@@ -302,7 +302,7 @@ a {
 
 .card {
     border-radius: 5px;
-    /* box-shadow: 0 0 20px 10px #ccc;  */
+    box-shadow: 0 0 20px 10px #ccc;
     margin-top: 2rem;
     overflow: visible;
 
@@ -461,7 +461,8 @@ a {
 }
 
 .testimonial__image {
-    position: relative;
+    width: 100%;
+    position: relative;   
 }
 
 .testimonial__image>img {
