@@ -5,7 +5,7 @@
     --color-heading: #1b0760;
     --color-body: #928ca4;
     --color-border: #ccc;
-    --color-bodydark: #5c5577;
+    --color-bodydark: #5c5577;  
     --border-radius: 30px;
     --media-font: 1.5rem;
 }
@@ -172,6 +172,11 @@ a {
     padding: 0;
 }
 
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
+
 .icon--primary {
     fill: var(--color-primary);
 }
@@ -192,8 +197,8 @@ a {
 
 .icon-container svg {
     position: absolute;
-    right: 20%;
-}
+    right: 25%;
+} 
 
 .icon-container--accent {
     background: var(--color-accent);
@@ -465,7 +470,7 @@ a {
     position: relative;   
 }
 
-.testimonial__image>img {
+.testimonial__image > img {
     width: 100%;
 }
 
@@ -474,3 +479,11 @@ a {
     top: 3rem;
     right: -32px;
 }
+
+@media screen and (min-width:768px) {
+    .testimonial .quote,
+    .testimonial .quote__author
+    {
+        font-size: 2.4rem;
+    }
+}  
